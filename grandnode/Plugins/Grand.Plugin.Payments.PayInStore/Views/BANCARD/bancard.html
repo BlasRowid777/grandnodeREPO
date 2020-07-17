@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>iFrame</title>
+    
+</head>
+
+<body>
+    <iframe src="https://vpos.infonet.com.py:8888/checkout/javascript/dist/bancard-checkout1.0.0.js"></iframe>
+    <h1 style="text-align: center">iFrame vPos</h1>
+    <div style="height: 300px; width: 500px; margin: auto" id="iframe-container"></div>
+</body>
+
+</html>
+<script type="application/javascript">
+        styles = {
+        "form-background-color": "#001b60",
+        "button-background-color": "#4faed1",
+        "button-text-color": "#fcfcfc",
+        "button-border-color": "#dddddd",
+        "input-background-color": "#fcfcfc",
+        "input-text-color": "#111111",
+        "input-placeholder-color": "#111111"
+        };
+        window. onload = function () {
+    Bancard.Checkout. createForm ('iframe-container', 'WR-YY9JmxsEZV3hpVGA7', styles);
+    };
+</script>
